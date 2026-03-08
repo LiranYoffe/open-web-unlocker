@@ -5,6 +5,7 @@ import { loadRulesConfig, resolvePolicyForUrl } from "../config";
 import { unlock } from "../unlock";
 import { parseGeneric, resolveParser } from "../parsers";
 import { toMarkdown } from "../parsers/to-markdown";
+import pkg from "../../package.json";
 
 interface FetchToolArgs {
 	url: string;
@@ -15,7 +16,7 @@ interface FetchToolArgs {
 export async function startMcpServer(): Promise<void> {
 	const server = new McpServer({
 		name: "open-web-unlocker",
-		version: "0.1.0",
+		version: pkg.version,
 	});
 
 	const fetchToolConfig: any = {
