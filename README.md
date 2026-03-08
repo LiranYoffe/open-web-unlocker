@@ -21,53 +21,19 @@ It can run as:
 - Generic markdown fallback for unsupported pages
 - HTTP and MCP interfaces on top of the same core unlock/parsing pipeline
 
-## Requirements
-
-- Bun `>= 1.3.0` is the preferred runtime for users
-- Node `>= 20` is supported for the published CLI
-- Development in this repo should use Bun
-
-## Install
-
-Run without installing:
-
-```bash
-bunx open-web-unlocker --help
-```
-
-```bash
-npx open-web-unlocker --help
-```
-
-Install globally:
-
-```bash
-bun add -g open-web-unlocker
-```
-
-```bash
-npm install -g open-web-unlocker
-```
-
-Install dependencies for development:
-
-```bash
-bun install
-```
-
-Build the package:
-
-```bash
-bun run build
-```
-
-Run checks:
-
-```bash
-bun run check
-```
-
 ## CLI
+
+Preferred no-install usage:
+
+```bash
+bunx open-web-unlocker fetch "https://example.com" --format markdown
+```
+
+Node-compatible no-install usage:
+
+```bash
+npx open-web-unlocker fetch "https://example.com" --format markdown
+```
 
 Run directly from source during development:
 
@@ -189,6 +155,34 @@ Supported `format` values:
 - `markdown`
 - `json`
 
+## Requirements
+
+- Bun `>= 1.3.0` is the preferred runtime for users
+- Node `>= 20` is supported for the published CLI
+- Development in this repo should use Bun
+
+## Install
+
+Run without installing:
+
+```bash
+bunx open-web-unlocker --help
+```
+
+```bash
+npx open-web-unlocker --help
+```
+
+Install globally:
+
+```bash
+bun add -g open-web-unlocker
+```
+
+```bash
+npm install -g open-web-unlocker
+```
+
 ## How it is organized
 
 - `src/site-config/`
@@ -244,10 +238,3 @@ This repo includes:
   - tag-driven release flow via `v*` tags
 
 To use trusted publishing on npm, configure this GitHub repository as a trusted publisher for the package in npm settings.
-
-## Notes
-
-- This public repo intentionally excludes local agent workflow files, internal planning notes, and generated fixture snapshots.
-- Some domains require browser-first or browser-only unlock flows because of consent or challenge pages.
-- `Amazon /product-reviews/...` is intentionally unsupported.
-- `TikTok Shop` is currently deferred because it is not testable from this environment.
