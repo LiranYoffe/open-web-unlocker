@@ -1,16 +1,6 @@
 # Open Web Unlocker
 
-Open Web Unlocker is a Bun-first project for fetching public web pages through a configurable `fetch` / `browser` unlock pipeline and returning either:
-
-- raw HTML
-- cleaned markdown
-- structured JSON from site-specific parsers
-
-It can run as:
-
-- a CLI
-- an MCP server over stdio
-- an HTTP server
+Fetch web pages and search results and return either raw HTML, clean markdown, or structured JSON.
 
 ## Highlights
 
@@ -26,66 +16,44 @@ It can run as:
 Preferred no-install usage:
 
 ```bash
-bunx open-web-unlocker fetch "https://example.com" --format markdown
+bunx open-web-unlocker fetch "https://example.com"
 ```
 
-Node-compatible no-install usage:
+Node and `npx` are also supported, but Bun and `bunx` are the preferred path.
 
-```bash
-npx open-web-unlocker fetch "https://example.com" --format markdown
-```
-
-Run directly from source during development:
-
-```bash
-bun run src/index.ts fetch "https://example.com" --format markdown
-```
-
-Run the built CLI:
-
-```bash
-node dist/index.js fetch "https://example.com" --format json
-```
-
-Show help:
-
-```bash
-node dist/index.js --help
-```
-
-### CLI examples
-
-Fetch clean markdown:
-
-```bash
-node dist/index.js fetch "https://example.com" --format markdown
-```
+`--format markdown` is the default.
 
 Fetch structured JSON:
 
 ```bash
-node dist/index.js fetch "https://example.com/article" --format json
+bunx open-web-unlocker fetch "https://example.com/article" --format json
+```
+
+Fetch raw HTML:
+
+```bash
+bunx open-web-unlocker fetch "https://example.com/article" --format html
 ```
 
 Set a custom total timeout:
 
 ```bash
-node dist/index.js fetch "https://example.com/app" --format json --timeout 45000
+bunx open-web-unlocker fetch "https://example.com/app" --timeout 45000
 ```
+
+For fetch guidance in agent environments, see the bundled skill at `skills/open-web-unlocker-fetch/`.
 
 ## MCP Server
 
-Start the MCP server over stdio:
+Preferred:
 
 ```bash
-bun run src/index.ts --mcp
+bunx open-web-unlocker --mcp
 ```
 
-Or from the built output:
+Node-compatible:
 
-```bash
-node dist/index.js --mcp
-```
+Node and `npx` are also supported here, but Bun and `bunx` are the preferred path.
 
 The MCP server exposes a single `fetch` tool with:
 
@@ -93,14 +61,22 @@ The MCP server exposes a single `fetch` tool with:
 - `format`: `html`, `markdown`, or `json`
 - `timeout_ms`
 
-### Example MCP client config
+Add it to Claude Code:
+
+```bash
+claude mcp add open-web-unlocker -- bunx open-web-unlocker --mcp
+```
+
+Node-compatible alternative:
+
+Example MCP client config:
 
 ```json
 {
   "mcpServers": {
     "open-web-unlocker": {
-      "command": "npx",
-      "args": ["-y", "open-web-unlocker", "--mcp"]
+      "command": "bunx",
+      "args": ["open-web-unlocker", "--mcp"]
     }
   }
 }
@@ -108,17 +84,15 @@ The MCP server exposes a single `fetch` tool with:
 
 ## HTTP Server
 
-Start the HTTP server:
+Preferred:
 
 ```bash
-bun run src/index.ts --http --port 3000
+bunx open-web-unlocker --http --port 3000
 ```
 
-Or from the built output:
+Node-compatible:
 
-```bash
-node dist/index.js --http --port 3000
-```
+Node and `npx` are also supported here, but Bun and `bunx` are the preferred path.
 
 Health check:
 
@@ -158,7 +132,7 @@ Supported `format` values:
 ## Requirements
 
 - Bun `>= 1.3.0` is the preferred runtime for users
-- Node `>= 20` is supported for the published CLI
+- Node `>= 20` is also supported for the published CLI
 - Development in this repo should use Bun
 
 ## Install
@@ -169,18 +143,10 @@ Run without installing:
 bunx open-web-unlocker --help
 ```
 
-```bash
-npx open-web-unlocker --help
-```
-
 Install globally:
 
 ```bash
 bun add -g open-web-unlocker
-```
-
-```bash
-npm install -g open-web-unlocker
 ```
 
 ## How it is organized
@@ -220,6 +186,18 @@ Check what would be published to npm:
 
 ```bash
 bun run pack:dry-run
+```
+
+Run directly from source during development:
+
+```bash
+bun run src/index.ts fetch "https://example.com"
+```
+
+Run the built CLI:
+
+```bash
+node dist/index.js fetch "https://example.com" --format json
 ```
 
 ## CI/CD
