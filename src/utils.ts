@@ -21,9 +21,9 @@ export function getErrorMessage(error: unknown): string {
 
 export function headersToObject(headers: Headers): Record<string, string> {
 	const output: Record<string, string> = {};
-	for (const [key, value] of headers.entries()) {
+	headers.forEach((value, key) => {
 		output[key] = value;
-	}
+	});
 	return output;
 }
 

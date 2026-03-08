@@ -1,22 +1,24 @@
 ---
 name: open-web-unlocker-fetch
 description: >
-  Guides using Open Web Unlocker's fetch command without installing it first.
-  Use this skill whenever the user wants to fetch a page with
-  `npx open-web-unlocker` or `bunx open-web-unlocker`, asks which output format
-  to use (markdown/html/json), wants clean page content instead of raw HTML, or
-  wants structured extracted data from a web page or search results page.
+  Explains how to use Open Web Unlocker's fetch command. Use this skill when
+  the user asks how to fetch with `npx open-web-unlocker` or
+  `bunx open-web-unlocker`, asks which output format to use
+  (markdown/html/json), or asks how to get clean page content or structured
+  extracted data from a web page or search results page.
 ---
 
 # Open Web Unlocker Fetch
 
 Use this skill for fetch guidance without installation.
 
+Bun is the preferred runtime. Use `bunx` first, and use `npx` only when Node-based execution is specifically needed.
+
 ## Main usage
 
 ```bash
-npx open-web-unlocker fetch <url>
 bunx open-web-unlocker fetch <url>
+npx open-web-unlocker fetch <url>
 ```
 
 With format selection:

@@ -13,9 +13,9 @@
 		"LICENSE"
 	],
 	"scripts": {
-		"build": "rm -rf dist && bun x tsc --project tsconfig.build.json",
+		"build": "rm -rf dist && bun build ./src/index.ts --outdir ./dist --target node --packages external",
 		"typecheck": "bun x tsc --noEmit",
-		"smoke:cli": "bun dist/index.js --help >/dev/null",
+		"smoke:cli": "node dist/index.js --help >/dev/null",
 		"pack:dry-run": "bunx npm pack --dry-run",
 		"check": "bun run typecheck && bun run build && bun run smoke:cli",
 		"test": "bun run check",
@@ -25,6 +25,7 @@
 		"access": "public"
 	},
 	"engines": {
+		"node": ">=20",
 		"bun": ">=1.3.0"
 	},
 	"keywords": [
@@ -37,6 +38,7 @@
 	],
 	"license": "MIT",
 	"dependencies": {
+		"@hono/node-server": "^1.19.11",
 		"@modelcontextprotocol/sdk": "^1.27.1",
 		"camoufox-js": "^0.9.1",
 		"commander": "^14.0.3",
@@ -52,6 +54,7 @@
 		"zod": "^4.3.6"
 	},
 	"devDependencies": {
-		"@types/bun": "^1.3.10"
+		"@types/bun": "^1.3.10",
+		"@types/node": "^24.6.1"
 	}
 }

@@ -1,6 +1,6 @@
 # Open Web Unlocker
 
-Open Web Unlocker is a Bun-first tool for fetching public web pages through a configurable `fetch` / `browser` unlock pipeline and returning either:
+Open Web Unlocker is a Bun-first project for fetching public web pages through a configurable `fetch` / `browser` unlock pipeline and returning either:
 
 - raw HTML
 - cleaned markdown
@@ -23,7 +23,9 @@ It can run as:
 
 ## Requirements
 
-- Bun `>= 1.3.0`
+- Bun `>= 1.3.0` is the preferred runtime for users
+- Node `>= 20` is supported for the published CLI
+- Development in this repo should use Bun
 
 ## Install
 
@@ -33,10 +35,18 @@ Run without installing:
 bunx open-web-unlocker --help
 ```
 
+```bash
+npx open-web-unlocker --help
+```
+
 Install globally:
 
 ```bash
 bun add -g open-web-unlocker
+```
+
+```bash
+npm install -g open-web-unlocker
 ```
 
 Install dependencies for development:
@@ -68,13 +78,13 @@ bun run src/index.ts fetch "https://example.com" --format markdown
 Run the built CLI:
 
 ```bash
-bun dist/index.js fetch "https://example.com" --format json
+node dist/index.js fetch "https://example.com" --format json
 ```
 
 Show help:
 
 ```bash
-bun dist/index.js --help
+node dist/index.js --help
 ```
 
 ### CLI examples
@@ -82,19 +92,19 @@ bun dist/index.js --help
 Fetch clean markdown:
 
 ```bash
-bun dist/index.js fetch "https://example.com" --format markdown
+node dist/index.js fetch "https://example.com" --format markdown
 ```
 
 Fetch structured JSON:
 
 ```bash
-bun dist/index.js fetch "https://example.com/article" --format json
+node dist/index.js fetch "https://example.com/article" --format json
 ```
 
 Set a custom total timeout:
 
 ```bash
-bun dist/index.js fetch "https://example.com/app" --format json --timeout 45000
+node dist/index.js fetch "https://example.com/app" --format json --timeout 45000
 ```
 
 ## MCP Server
@@ -108,7 +118,7 @@ bun run src/index.ts --mcp
 Or from the built output:
 
 ```bash
-bun dist/index.js --mcp
+node dist/index.js --mcp
 ```
 
 The MCP server exposes a single `fetch` tool with:
@@ -122,9 +132,9 @@ The MCP server exposes a single `fetch` tool with:
 ```json
 {
   "mcpServers": {
-    "owu": {
-      "command": "bun",
-      "args": ["dist/index.js", "--mcp"]
+    "open-web-unlocker": {
+      "command": "npx",
+      "args": ["-y", "open-web-unlocker", "--mcp"]
     }
   }
 }
@@ -141,7 +151,7 @@ bun run src/index.ts --http --port 3000
 Or from the built output:
 
 ```bash
-bun dist/index.js --http --port 3000
+node dist/index.js --http --port 3000
 ```
 
 Health check:
@@ -226,11 +236,11 @@ This repo includes:
   - install
   - typecheck
   - build
-  - CLI smoke test
+  - Node CLI smoke test
   - npm pack dry-run
 - `Publish to npm`
   - GitHub Actions trusted publishing with `id-token: write`
-  - `bunx npm publish --provenance --access public`
+  - `npm publish --provenance --access public`
   - tag-driven release flow via `v*` tags
 
 To use trusted publishing on npm, configure this GitHub repository as a trusted publisher for the package in npm settings.

@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { serve } from "@hono/node-server";
 import { z } from "zod";
 import { loadRulesConfig, resolvePolicyForUrl } from "../config";
 import { unlock } from "../unlock";
@@ -304,7 +305,7 @@ export function createHttpApp(): Hono {
 export async function startHttpServer(port: number): Promise<void> {
 	const app = createHttpApp();
 	console.log(`[owu] Starting HTTP server on port ${port}`);
-	Bun.serve({
+	serve({
 		port,
 		fetch: app.fetch,
 	});

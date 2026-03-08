@@ -1,4 +1,4 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 import { Command } from "commander";
 import { runCli } from "./modes/cli";
 import { startHttpServer } from "./modes/http";
