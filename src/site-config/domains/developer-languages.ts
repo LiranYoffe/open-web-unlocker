@@ -22,7 +22,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
             "duration_ms": 6000
           }
         ],
-        "parser": "docs-site"
+        "parser": "docs-mdn-developer-mozilla-org"
       },
       {
         "id": "mdn-default",
@@ -35,7 +35,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mdn-developer-mozilla-org"
       }
     ]
   },
@@ -52,7 +52,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-docs-python-org"
       }
     ]
   },
@@ -69,7 +69,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-nodejs-org"
       }
     ]
   },
@@ -86,7 +86,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-typescriptlang-org"
       }
     ]
   },
@@ -103,7 +103,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-doc-rust-lang-org"
       }
     ]
   },
@@ -120,7 +120,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-rs"
       }
     ]
   },
@@ -137,7 +137,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-go-dev"
       }
     ]
   },
@@ -154,7 +154,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-pkg-go-dev"
       }
     ]
   },
@@ -171,7 +171,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-kotlinlang-org"
       }
     ]
   },
@@ -188,7 +188,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-php-net"
       }
     ]
   },
@@ -205,7 +205,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-ruby-doc-org"
       }
     ]
   },
@@ -222,7 +222,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-cppreference-com"
       }
     ]
   },
@@ -239,7 +239,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-swift-org"
       }
     ]
   },
@@ -256,7 +256,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-elixir-lang-org"
       }
     ]
   },
@@ -273,7 +273,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-scala-lang-org"
       }
     ]
   },
@@ -290,7 +290,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-dlang-org"
       }
     ]
   },
@@ -307,7 +307,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-crystal-lang-org"
       }
     ]
   },
@@ -324,7 +324,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-haskell-org"
       }
     ]
   },
@@ -341,7 +341,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-erlang-org"
       }
     ]
   },
@@ -358,7 +358,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-lua-org"
       }
     ]
   },
@@ -375,7 +375,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-julialang-org"
       }
     ]
   },
@@ -392,7 +392,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-julialang-org"
       }
     ]
   },
@@ -409,7 +409,7 @@ export const DEVELOPER_LANGUAGES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-lua-org"
       }
     ]
   }

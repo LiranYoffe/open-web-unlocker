@@ -15,7 +15,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-devsite-developers-google-com"
       }
     ]
   },
@@ -32,7 +32,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-platform-openai-com"
       }
     ]
   },
@@ -49,7 +49,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-anthropic-com"
       }
     ]
   },
@@ -66,7 +66,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-twilio-com"
       }
     ]
   },
@@ -83,7 +83,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-docs-expo-dev"
       }
     ]
   },
@@ -100,7 +100,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-reactnative-dev"
       }
     ]
   },
@@ -117,7 +117,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-flutter-dev"
       }
     ]
   },
@@ -134,7 +134,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-tensorflow-org"
       }
     ]
   },
@@ -151,7 +151,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-pytorch-org"
       }
     ]
   },
@@ -168,7 +168,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-scikit-learn-org"
       }
     ]
   },
@@ -185,7 +185,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-pandas-pydata-org"
       }
     ]
   },
@@ -202,7 +202,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-numpy-org"
       }
     ]
   },
@@ -219,7 +219,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-matplotlib-org"
       }
     ]
   },
@@ -236,7 +236,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-huggingface-co"
       }
     ]
   },
@@ -253,7 +253,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-graphql-org"
       }
     ]
   },
@@ -270,7 +270,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-grpc-io"
       }
     ]
   },
@@ -287,7 +287,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-apollographql-com"
       }
     ]
   },
@@ -304,7 +304,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-w3schools-com"
       }
     ]
   },
@@ -321,7 +321,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-w3-org"
       }
     ]
   },
@@ -338,7 +338,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-devsite-developer-android-com"
       }
     ]
   },
@@ -355,7 +355,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-developer-apple-com"
       }
     ]
   },
@@ -372,7 +372,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-devsite-developer-chrome-com"
       }
     ]
   },
@@ -389,7 +389,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-devsite-web-dev"
       }
     ]
   },
@@ -406,7 +406,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-kafka-apache-org"
       }
     ]
   },
@@ -423,7 +423,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mkdocs-helm-sh"
       }
     ]
   },
@@ -436,11 +436,10 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "value": "/"
         },
         "allowed_strategies": [
-          "fetch",
           "browser"
         ],
-        "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "entry_strategy": "browser",
+        "parser": "docs-docusaurus-docs-nestjs-com"
       }
     ]
   },
@@ -457,7 +456,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-fastify-dev"
       }
     ]
   },
@@ -474,7 +473,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-socket-io"
       }
     ]
   },
@@ -491,7 +490,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-electronjs-org"
       }
     ]
   },
@@ -508,7 +507,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-cookbook-openai-com"
       }
     ]
   },
@@ -525,7 +524,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-docs-langchain-com"
       }
     ]
   },
@@ -542,7 +541,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-python-langchain-com"
       }
     ]
   },
@@ -559,7 +558,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-authjs-dev"
       }
     ]
   },
@@ -576,7 +575,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-axios-http-com"
       }
     ]
   },
@@ -593,7 +592,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-date-fns-org"
       }
     ]
   },
@@ -610,7 +609,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-day-js-org"
       }
     ]
   },
@@ -627,7 +626,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-docs-expo-io"
       }
     ]
   },
@@ -644,7 +643,24 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-flutter-dev"
+      }
+    ]
+  },
+  "api.flutter.dev": {
+    "rules": [
+      {
+        "id": "flutter-api-default",
+        "match": {
+          "type": "prefix",
+          "value": "/"
+        },
+        "allowed_strategies": [
+          "fetch",
+          "browser"
+        ],
+        "entry_strategy": "fetch",
+        "parser": "docs-site-api-flutter-dev"
       }
     ]
   },
@@ -661,7 +677,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-sendgrid-com"
       }
     ]
   },
@@ -678,7 +694,7 @@ export const DEVELOPER_AI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-lodash-com"
       }
     ]
   }

@@ -15,7 +15,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-tailwindcss-com"
       }
     ]
   },
@@ -32,7 +32,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-getbootstrap-com"
       }
     ]
   },
@@ -49,7 +49,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-mui-com"
       }
     ]
   },
@@ -66,7 +66,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-ui-shadcn-com"
       }
     ]
   },
@@ -83,7 +83,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-radix-ui-com"
       }
     ]
   },
@@ -100,7 +100,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-chakra-ui-com"
       }
     ]
   },
@@ -117,7 +117,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-api-jquery-com"
       }
     ]
   },
@@ -134,7 +134,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-threejs-org"
       },
       {
         "id": "threejs-default",
@@ -147,7 +147,7 @@ export const DEVELOPER_UI_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "docs-site-threejs-org"
       }
     ]
   }

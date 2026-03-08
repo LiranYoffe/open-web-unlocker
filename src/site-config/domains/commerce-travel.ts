@@ -56,7 +56,7 @@ export const COMMERCE_TRAVEL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-airbnb-com"
       }
     ]
   },
@@ -104,7 +104,7 @@ export const COMMERCE_TRAVEL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-yelp-com"
       }
     ]
   },
@@ -152,7 +152,7 @@ export const COMMERCE_TRAVEL_DOMAINS: Record<string, UnlockDomainConfig> = {
         ],
         "entry_strategy": "browser",
         "browser_timeout_ms": 20000,
-        "parser": "generic"
+        "parser": "generic-zillow-com"
       }
     ]
   },

@@ -85,7 +85,9 @@ function resolveUrls(element: Element, baseUrl: string): void {
 function extractTitle(doc: Document): string | null {
 	const titleElement = selectOne("title", doc) as Element | null;
 	if (titleElement) {
-		return textContent(titleElement).trim() || null;
+		const title = textContent(titleElement).trim();
+		if (!title || title.toLowerCase() === "undefined") return null;
+		return title;
 	}
 	return null;
 }

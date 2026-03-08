@@ -10,7 +10,14 @@ import { parseBookingSearch } from "./booking-search";
 import { parseBraveSearch } from "./brave-search";
 import { parseCrunchbase } from "./crunchbase";
 import { parseCocoaPods } from "./cocoapods";
+import { parseDocsDevsite } from "./docs-devsite";
+import { parseDocsDocusaurus } from "./docs-docusaurus";
+import { parseDocsMdn } from "./docs-mdn";
+import { parseDocsMkdocs } from "./docs-mkdocs";
+import { parseDocsNextjs } from "./docs-nextjs";
 import { parseDocsSite } from "./docs-site";
+import { parseDocsSphinx } from "./docs-sphinx";
+import { parseDocsVitepress } from "./docs-vitepress";
 import { parseDockerHub } from "./docker-hub";
 import { parseDuckDuckGo } from "./duckduckgo";
 import { parseEbay } from "./ebay";
@@ -72,7 +79,25 @@ import { parseTrustpilot } from "./trustpilot";
 
 type Parser = (html: string, url: string) => PageData;
 
-const DOCS_HOSTED_SUFFIXES = [".readthedocs.io", ".gitbook.io"] as const;
+const INHERITED_PARSER_PREFIXES: Array<[prefix: string, parser: Parser]> = [
+	["generic-", parseGeneric],
+	["docs-nextjs-", parseDocsNextjs],
+	["docs-mdn-", parseDocsMdn],
+	["docs-devsite-", parseDocsDevsite],
+	["docs-sphinx-", parseDocsSphinx],
+	["docs-mkdocs-", parseDocsMkdocs],
+	["docs-vitepress-", parseDocsVitepress],
+	["docs-docusaurus-", parseDocsDocusaurus],
+	["docs-site-", parseDocsSite],
+] as const;
+
+function resolveInheritedParserHint(parserHint?: string): Parser | null {
+	if (!parserHint) return null;
+	for (const [prefix, parser] of INHERITED_PARSER_PREFIXES) {
+		if (parserHint.startsWith(prefix)) return parser;
+	}
+	return null;
+}
 
 export { parseGeneric };
 
@@ -86,6 +111,13 @@ const PARSER_REGISTRY: Record<string, Parser> = {
 	hackernews: parseHackerNews,
 	"news-article": parseNewsArticle,
 	"docs-site": parseDocsSite,
+	"docs-docusaurus": parseDocsDocusaurus,
+	"docs-vitepress": parseDocsVitepress,
+	"docs-mkdocs": parseDocsMkdocs,
+	"docs-sphinx": parseDocsSphinx,
+	"docs-devsite": parseDocsDevsite,
+	"docs-mdn": parseDocsMdn,
+	"docs-nextjs": parseDocsNextjs,
 	cocoapods: parseCocoaPods,
 	jsr: parseJsr,
 	"docker-hub": parseDockerHub,
@@ -235,9 +267,97 @@ const AMAZON_HOSTS = [
 	"amazon.sa",
 ] as const;
 
-const DOCS_SITE_HOSTS = [
+// ── MDN ──────────────────────────────────────────────────────────────────────
+const DOCS_MDN_HOSTS = [
 	"developer.mozilla.org",
+] as const;
+
+// ── Docusaurus-based ─────────────────────────────────────────────────────────
+const DOCS_DOCUSAURUS_HOSTS = [
+	"docusaurus.io",
+	"redux.js.org",
+	"redux-toolkit.js.org",
+	"trpc.io",
+	"prisma.io",
+	"typeorm.io",
+	"jestjs.io",
+	"reactnative.dev",
+	"sequelize.org",
+	"socket.io",
+	"docs.sentry.io",
+	"biomejs.dev",
+	"authjs.dev",
+	"tanstack.com",
+	"pptr.dev",
+	"testing-library.com",
+	"docs.nestjs.com",
+	"storybook.js.org",
+	"reactrouter.com",
+	"docs.expo.dev",
+	"docs.expo.io",
+	"docs.cypress.io",
+] as const;
+
+// ── VitePress-based ──────────────────────────────────────────────────────────
+const DOCS_VITEPRESS_HOSTS = [
+	"vuejs.org",
+	"vueuse.org",
+	"router.vuejs.org",
+	"pinia.vuejs.org",
+	"vite.dev",
+	"vitejs.dev",
+	"rollupjs.org",
+	"vitepress.dev",
+	"valibot.dev",
+	"rspack.dev",
+	"vitest.dev",
+] as const;
+
+// ── MkDocs Material ──────────────────────────────────────────────────────────
+const DOCS_MKDOCS_HOSTS = [
+	"kubernetes.io",
+	"fastapi.tiangolo.com",
+	"docs.pnpm.io",
+	"pnpm.io",
+	"helm.sh",
+	"docs.docker.com",
+	"developer.hashicorp.com",
+	"grafana.com",
+	"squidfunk.github.io",
+] as const;
+
+// ── Sphinx / ReadTheDocs ─────────────────────────────────────────────────────
+const DOCS_SPHINX_HOSTS = [
 	"docs.python.org",
+	"flask.palletsprojects.com",
+	"docs.djangoproject.com",
+	"docs.pytest.org",
+	"docs.sqlalchemy.org",
+	"sqlalchemy.org",
+	"docs.readthedocs.io",
+	"docs.readthedocs.com",
+	"docs.langchain.com",
+	"python.langchain.com",
+] as const;
+
+// ── Google Devsite ───────────────────────────────────────────────────────────
+const DOCS_DEVSITE_HOSTS = [
+	"developers.google.com",
+	"developer.chrome.com",
+	"web.dev",
+	"firebase.google.com",
+	"developer.android.com",
+	"cloud.google.com",
+	"www.tensorflow.org",
+] as const;
+
+// ── Next.js docs ─────────────────────────────────────────────────────────────
+const DOCS_NEXTJS_HOSTS = [
+	"nextjs.org",
+] as const;
+
+// ── Generic docs (custom frameworks, Rustdoc, GitBook, etc.) ─────────────────
+const DOCS_SITE_HOSTS = [
 	"nodejs.org",
 	"www.typescriptlang.org",
 	"typescriptlang.org",
@@ -262,10 +382,8 @@ const DOCS_SITE_HOSTS = [
 	"julialang.org",
 	"docs.julialang.org",
 	"react.dev",
-	"vuejs.org",
 	"angular.io",
 	"angular.dev",
-	"nextjs.org",
 	"nuxt.com",
 	"svelte.dev",
 	"kit.svelte.dev",
@@ -274,11 +392,7 @@ const DOCS_SITE_HOSTS = [
 	"nx.dev",
 	"docs.deno.com",
 	"payloadcms.com",
-	"vite.dev",
 	"expressjs.com",
-	"fastapi.tiangolo.com",
-	"flask.palletsprojects.com",
-	"docs.djangoproject.com",
 	"laravel.com",
 	"inertiajs.com",
 	"livewire.laravel.com",
@@ -295,18 +409,13 @@ const DOCS_SITE_HOSTS = [
 	"solidjs.com",
 	"preactjs.com",
 	"qwik.dev",
-	"vueuse.org",
 	"react-hook-form.com",
 	"mobx.js.org",
 	"rxjs.dev",
 	"lit.dev",
 	"docs.aws.amazon.com",
-	"cloud.google.com",
 	"learn.microsoft.com",
 	"docs.microsoft.com",
-	"docs.docker.com",
-	"kubernetes.io",
-	"developer.hashicorp.com",
 	"docs.github.com",
 	"docs.gitlab.com",
 	"docs.netlify.com",
@@ -317,8 +426,6 @@ const DOCS_SITE_HOSTS = [
 	"www.postgresql.org",
 	"dev.mysql.com",
 	"www.mongodb.com",
-	"sqlalchemy.org",
-	"docs.sqlalchemy.org",
 	"redis.io",
 	"www.sqlite.org",
 	"clickhouse.com",
@@ -329,38 +436,21 @@ const DOCS_SITE_HOSTS = [
 	"supabase.com",
 	"planetscale.com",
 	"webpack.js.org",
-	"rollupjs.org",
-	"rspack.dev",
-	"vitejs.dev",
 	"esbuild.github.io",
 	"babeljs.io",
-	"jestjs.io",
-	"vitest.dev",
-	"docs.pytest.org",
-	"docs.cypress.io",
 	"playwright.dev",
-	"pptr.dev",
-	"testing-library.com",
 	"eslint.org",
 	"prettier.io",
-	"biomejs.dev",
-	"docs.pnpm.io",
 	"yarnpkg.com",
 	"bun.sh",
-	"authjs.dev",
 	"axios-http.com",
 	"date-fns.org",
 	"day.js.org",
 	"lodash.com",
-	"redux-toolkit.js.org",
 	"zustand.docs.pmnd.rs",
-	"pinia.vuejs.org",
-	"router.vuejs.org",
-	"valibot.dev",
 	"api.jquery.com",
 	"threejs.org",
 	"stripe.com",
-	"developers.google.com",
 	"platform.openai.com",
 	"docs.anthropic.com",
 	"www.twilio.com",
@@ -368,7 +458,6 @@ const DOCS_SITE_HOSTS = [
 	"auth0.com",
 	"clerk.com",
 	"resend.com",
-	"docs.sentry.io",
 	"posthog.com",
 	"tailwindcss.com",
 	"getbootstrap.com",
@@ -376,11 +465,8 @@ const DOCS_SITE_HOSTS = [
 	"ui.shadcn.com",
 	"radix-ui.com",
 	"chakra-ui.com",
-	"docs.expo.dev",
-	"reactnative.dev",
 	"flutter.dev",
 	"docs.flutter.dev",
-	"www.tensorflow.org",
 	"pytorch.org",
 	"scikit-learn.org",
 	"pandas.pydata.org",
@@ -390,51 +476,27 @@ const DOCS_SITE_HOSTS = [
 	"graphql.org",
 	"grpc.io",
 	"www.apollographql.com",
-	"redux.js.org",
-	"tanstack.com",
-	"prisma.io",
-	"typeorm.io",
 	"zod.dev",
-	"trpc.io",
 	"orm.drizzle.team",
 	"www.w3schools.com",
 	"www.w3.org",
-	"developer.android.com",
 	"man7.org",
-	"docs.expo.io",
 	"devdocs.io",
-	"docs.readthedocs.io",
-	"docs.readthedocs.com",
 	"docs.gitbook.com",
 	"developer.apple.com",
-	"developer.chrome.com",
-	"web.dev",
-	"firebase.google.com",
 	"developer.atlassian.com",
 	"git-scm.com",
 	"docs.oracle.com",
 	"kafka.apache.org",
-	"helm.sh",
-	"grafana.com",
 	"prometheus.io",
-	"docs.nestjs.com",
 	"fastify.dev",
-	"socket.io",
 	"electronjs.org",
 	"cookbook.openai.com",
-	"docs.langchain.com",
-	"python.langchain.com",
 	"nginx.org",
 	"docs.snowflake.com",
 	"developer.salesforce.com",
-	"storybook.js.org",
-	"vitepress.dev",
-	"docusaurus.io",
 	"turbo.build",
 	"mongoosejs.com",
-	"sequelize.org",
-	"reactrouter.com",
-	"pnpm.io",
 	"sass-lang.com",
 ] as const;
 
@@ -501,6 +563,13 @@ const DOMAIN_PARSERS: Record<string, Parser> = {
 	...mapDomains(["bing.com"], parseBing),
 	...mapDomains(["duckduckgo.com"], parseDuckDuckGo),
 	...mapDomains(["search.brave.com"], parseBraveSearch),
+	...mapDomains(DOCS_MDN_HOSTS, parseDocsMdn),
+	...mapDomains(DOCS_DOCUSAURUS_HOSTS, parseDocsDocusaurus),
+	...mapDomains(DOCS_VITEPRESS_HOSTS, parseDocsVitepress),
+	...mapDomains(DOCS_MKDOCS_HOSTS, parseDocsMkdocs),
+	...mapDomains(DOCS_SPHINX_HOSTS, parseDocsSphinx),
+	...mapDomains(DOCS_DEVSITE_HOSTS, parseDocsDevsite),
+	...mapDomains(DOCS_NEXTJS_HOSTS, parseDocsNextjs),
 	...mapDomains(DOCS_SITE_HOSTS, parseDocsSite),
 };
 
@@ -509,10 +578,17 @@ export function resolveParser(url: string, parserHint?: string): Parser | null {
 	if (parserHint === "generic") {
 		return null;
 	}
-	if (parserHint) {
+	const inherited = resolveInheritedParserHint(parserHint);
+	if (inherited) {
+		return inherited;
+	}
+	if (parserHint && parserHint !== "docs-site") {
 		const hinted = PARSER_REGISTRY[parserHint];
 		if (hinted) return hinted;
 	}
+
+	// For "docs-site" hint, prefer a more specific domain parser if available
+	// (e.g. docs-docusaurus, docs-vitepress, etc.)
 
 	const hostname = new URL(url).hostname.replace(/^www\./, "");
 
@@ -532,7 +608,10 @@ export function resolveParser(url: string, parserHint?: string): Parser | null {
 	}
 
 	// 4. Hosted docs platforms that share common HTML structures.
-	if (DOCS_HOSTED_SUFFIXES.some((suffix) => hostname.endsWith(suffix))) {
+	if (hostname.endsWith(".readthedocs.io") || hostname.endsWith(".readthedocs.com")) {
+		return parseDocsSphinx;
+	}
+	if (hostname.endsWith(".gitbook.io")) {
 		return parseDocsSite;
 	}
 

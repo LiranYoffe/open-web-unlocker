@@ -104,7 +104,7 @@ export const SOCIAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-youtube-com"
       }
     ]
   },
@@ -253,7 +253,7 @@ export const SOCIAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-linkedin-com"
       }
     ]
   },
@@ -365,7 +365,7 @@ export const SOCIAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-facebook-com"
       }
     ]
   },
@@ -405,7 +405,7 @@ export const SOCIAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-instagram-com"
       }
     ]
   },
@@ -445,7 +445,24 @@ export const SOCIAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-tiktok-com"
+      }
+    ]
+  },
+  "shop.tiktok.com": {
+    "rules": [
+      {
+        "id": "tiktok-shop-default",
+        "match": {
+          "type": "prefix",
+          "value": "/"
+        },
+        "allowed_strategies": [
+          "fetch",
+          "browser"
+        ],
+        "entry_strategy": "fetch",
+        "parser": "generic-shop-tiktok-com"
       }
     ]
   },
