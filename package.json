@@ -1,6 +1,6 @@
 {
 	"name": "open-web-unlocker",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Fetch public web pages through a configurable fetch/browser pipeline and parse them into structured JSON or clean markdown.",
 	"type": "module",
 	"packageManager": "bun@1.3.10",
