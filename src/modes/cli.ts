@@ -9,7 +9,14 @@ export interface CliOptions {
 }
 
 export async function runCli(url: string, options: CliOptions): Promise<void> {
-	const targetUrl = new URL(url);
+	let targetUrl: URL;
+	try {
+		targetUrl = new URL(url);
+	} catch {
+		console.error(`[owu] Error: Invalid URL "${url}". Please provide a full URL (e.g. https://example.com).`);
+		process.exitCode = 1;
+		return;
+	}
 	const rulesConfig = await loadRulesConfig();
 	const policy = resolvePolicyForUrl(targetUrl, rulesConfig);
 

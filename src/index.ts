@@ -3,13 +3,14 @@ import { Command } from "commander";
 import { runCli } from "./modes/cli";
 import { startHttpServer } from "./modes/http";
 import { startMcpServer } from "./modes/mcp";
+import pkg from "../package.json";
 
 const program = new Command();
 
 program
 	.name("owu")
 	.description("Open Web Unlocker — fetch and parse web pages")
-	.version("0.1.0");
+	.version(pkg.version);
 
 program
 	.command("fetch <url>")
