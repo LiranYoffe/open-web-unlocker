@@ -2,6 +2,40 @@ import type { UnlockDomainConfig } from "../../types";
 
 // Build, test, packaging, and general tooling documentation.
 export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
+  "pkgx.sh": {
+    "rules": [
+      {
+        "id": "pkgx-sh-default",
+        "match": {
+          "type": "prefix",
+          "value": "/"
+        },
+        "allowed_strategies": [
+          "fetch",
+          "browser"
+        ],
+        "entry_strategy": "fetch",
+        "parser": "generic-pkgx-sh"
+      }
+    ]
+  },
+  "pkgx.dev": {
+    "rules": [
+      {
+        "id": "pkgx-dev-default",
+        "match": {
+          "type": "prefix",
+          "value": "/"
+        },
+        "allowed_strategies": [
+          "fetch",
+          "browser"
+        ],
+        "entry_strategy": "browser",
+        "parser": "generic-pkgx-dev"
+      }
+    ]
+  },
   "webpack.js.org": {
     "rules": [
       {
@@ -15,7 +49,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-webpack-js-org"
       }
     ]
   },
@@ -32,7 +66,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-vitejs-dev"
       }
     ]
   },
@@ -49,7 +83,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-babeljs-io"
       }
     ]
   },
@@ -66,7 +100,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-jestjs-io"
       }
     ]
   },
@@ -83,7 +117,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-vitest-dev"
       }
     ]
   },
@@ -100,7 +134,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-docs-cypress-io"
       }
     ]
   },
@@ -117,7 +151,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-playwright-dev"
       }
     ]
   },
@@ -134,7 +168,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-eslint-org"
       }
     ]
   },
@@ -151,7 +185,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-prettier-io"
       }
     ]
   },
@@ -168,7 +202,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-biomejs-dev"
       }
     ]
   },
@@ -185,7 +219,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mkdocs-docs-pnpm-io"
       }
     ]
   },
@@ -202,7 +236,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-yarnpkg-com"
       }
     ]
   },
@@ -219,7 +253,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-bun-sh"
       }
     ]
   },
@@ -236,7 +270,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-man7-org"
       }
     ]
   },
@@ -252,7 +286,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "docs-site"
+        "parser": "docs-site-devdocs-io"
       }
     ]
   },
@@ -269,7 +303,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-docs-readthedocs-io"
       }
     ]
   },
@@ -286,7 +320,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-gitbook-com"
       }
     ]
   },
@@ -302,7 +336,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "docs-site"
+        "parser": "docs-site-git-scm-com"
       },
       {
         "id": "git-default",
@@ -315,7 +349,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-git-scm-com"
       }
     ]
   },
@@ -332,7 +366,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-storybook-js-org"
       }
     ]
   },
@@ -349,7 +383,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-vitepress-dev"
       }
     ]
   },
@@ -366,7 +400,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-docusaurus-io"
       }
     ]
   },
@@ -383,7 +417,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-turbo-build"
       }
     ]
   },
@@ -400,7 +434,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mkdocs-pnpm-io"
       }
     ]
   },
@@ -417,7 +451,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-docs-pytest-org"
       }
     ]
   },
@@ -434,7 +468,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-esbuild-github-io"
       }
     ]
   },
@@ -451,7 +485,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-testing-library-com"
       }
     ]
   },
@@ -468,7 +502,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-rollupjs-org"
       }
     ]
   },
@@ -485,7 +519,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-rspack-dev"
       }
     ]
   },
@@ -502,7 +536,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-pptr-dev"
       }
     ]
   },
@@ -518,7 +552,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-docs-readthedocs-com"
       },
       {
         "id": "readthedocs-com-default",
@@ -531,7 +565,7 @@ export const DEVELOPER_TOOLING_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-docs-readthedocs-com"
       }
     ]
   }

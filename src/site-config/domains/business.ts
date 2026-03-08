@@ -47,7 +47,7 @@ export const BUSINESS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "type": "prefix",
           "value": "/"
         },
-        "parser": "generic"
+        "parser": "generic-finance-yahoo-com"
       }
     ]
   },
@@ -107,7 +107,7 @@ export const BUSINESS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-indeed-com"
       }
     ]
   },
@@ -244,7 +244,7 @@ export const BUSINESS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "type": "prefix",
           "value": "/"
         },
-        "parser": "generic"
+        "parser": "generic-crunchbase-com"
       }
     ]
   }

@@ -117,7 +117,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-com"
       }
     ]
   },
@@ -236,7 +236,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-in"
       }
     ]
   },
@@ -355,7 +355,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-co-jp"
       }
     ]
   },
@@ -474,7 +474,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-de"
       }
     ]
   },
@@ -593,7 +593,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-co-uk"
       }
     ]
   },
@@ -712,7 +712,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-fr"
       }
     ]
   },
@@ -831,7 +831,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-ca"
       }
     ]
   },
@@ -950,7 +950,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-com-au"
       }
     ]
   },
@@ -1069,7 +1069,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-es"
       }
     ]
   },
@@ -1188,7 +1188,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-it"
       }
     ]
   },
@@ -1307,7 +1307,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-nl"
       }
     ]
   },
@@ -1409,7 +1409,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-com-mx"
       }
     ]
   },
@@ -1511,7 +1511,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-com-br"
       }
     ]
   },
@@ -1613,7 +1613,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-com-sg"
       }
     ]
   },
@@ -1715,7 +1715,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-ae"
       }
     ]
   },
@@ -1817,7 +1817,7 @@ export const COMMERCE_AMAZON_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-amazon-sa"
       }
     ]
   }

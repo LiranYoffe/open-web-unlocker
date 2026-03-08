@@ -15,7 +15,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-react-dev"
       }
     ]
   },
@@ -32,7 +32,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-vuejs-org"
       }
     ]
   },
@@ -49,7 +49,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-angular-io"
       }
     ]
   },
@@ -66,7 +66,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-nextjs"
       }
     ]
   },
@@ -83,7 +83,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-nuxt-com"
       }
     ]
   },
@@ -100,7 +100,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-svelte-dev"
       }
     ]
   },
@@ -117,7 +117,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-kit-svelte-dev"
       }
     ]
   },
@@ -134,7 +134,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-remix-run"
       }
     ]
   },
@@ -151,7 +151,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-astro-build"
       }
     ]
   },
@@ -168,7 +168,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-expressjs-com"
       }
     ]
   },
@@ -185,7 +185,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mkdocs-fastapi-tiangolo-com"
       }
     ]
   },
@@ -202,7 +202,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-flask-palletsprojects-com"
       }
     ]
   },
@@ -219,7 +219,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-docs-djangoproject-com"
       }
     ]
   },
@@ -236,7 +236,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-laravel-com"
       }
     ]
   },
@@ -253,7 +253,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-rubyonrails-org"
       }
     ]
   },
@@ -270,7 +270,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-htmx-org"
       }
     ]
   },
@@ -287,7 +287,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-alpinejs-dev"
       }
     ]
   },
@@ -304,7 +304,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-solidjs-com"
       }
     ]
   },
@@ -321,7 +321,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-redux-js-org"
       }
     ]
   },
@@ -338,7 +338,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-tanstack-com"
       }
     ]
   },
@@ -355,7 +355,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-prisma-io"
       }
     ]
   },
@@ -372,7 +372,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-zod-dev"
       }
     ]
   },
@@ -389,7 +389,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-trpc-io"
       }
     ]
   },
@@ -406,7 +406,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-orm-drizzle-team"
       }
     ]
   },
@@ -423,7 +423,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-mongoosejs-com"
       }
     ]
   },
@@ -440,7 +440,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-sequelize-org"
       }
     ]
   },
@@ -457,7 +457,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-reactrouter-com"
       }
     ]
   },
@@ -474,7 +474,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-sass-lang-com"
       }
     ]
   },
@@ -491,7 +491,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-angular-dev"
       }
     ]
   },
@@ -508,7 +508,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-vite-dev"
       }
     ]
   },
@@ -525,7 +525,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-symfony-com"
       }
     ]
   },
@@ -542,7 +542,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-vueuse-org"
       }
     ]
   },
@@ -559,7 +559,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-react-hook-form-com"
       }
     ]
   },
@@ -576,7 +576,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-mobx-js-org"
       }
     ]
   },
@@ -593,7 +593,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-rxjs-dev"
       }
     ]
   },
@@ -610,7 +610,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-lit-dev"
       }
     ]
   },
@@ -627,7 +627,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site",
+        "parser": "docs-site-inertiajs-com",
         "max_response_bytes": 15000000
       }
     ]
@@ -645,7 +645,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-livewire-laravel-com"
       }
     ]
   },
@@ -662,7 +662,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-rubydoc-info"
       }
     ]
   },
@@ -679,7 +679,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-api-rubyonrails-org"
       }
     ]
   },
@@ -696,7 +696,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-guides-rubyonrails-org"
       }
     ]
   },
@@ -713,7 +713,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-hotwired-dev"
       }
     ]
   },
@@ -730,7 +730,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-turbo-hotwired-dev"
       }
     ]
   },
@@ -747,7 +747,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-stimulus-hotwired-dev"
       }
     ]
   },
@@ -764,7 +764,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-redux-toolkit-js-org"
       }
     ]
   },
@@ -781,7 +781,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site",
+        "parser": "docs-site-zustand-docs-pmnd-rs",
         "max_response_bytes": 15000000
       }
     ]
@@ -799,7 +799,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-qwik-dev"
       }
     ]
   },
@@ -816,7 +816,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-typeorm-io"
       }
     ]
   },
@@ -833,7 +833,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-preactjs-com"
       }
     ]
   },
@@ -850,7 +850,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-router-vuejs-org"
       }
     ]
   },
@@ -867,7 +867,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-pinia-vuejs-org"
       }
     ]
   },
@@ -884,7 +884,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-vitepress-valibot-dev"
       }
     ]
   },
@@ -901,7 +901,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-nx-dev"
       }
     ]
   },
@@ -918,7 +918,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-deno-com"
       }
     ]
   },
@@ -935,7 +935,7 @@ export const DEVELOPER_FRAMEWORKS_DOMAINS: Record<string, UnlockDomainConfig> = 
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-payloadcms-com"
       }
     ]
   }

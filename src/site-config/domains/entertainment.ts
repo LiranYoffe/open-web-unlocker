@@ -41,7 +41,7 @@ export const ENTERTAINMENT_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-imdb-com"
       }
     ]
   },
@@ -84,7 +84,7 @@ export const ENTERTAINMENT_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-rottentomatoes-com"
       }
     ]
   },
@@ -127,7 +127,7 @@ export const ENTERTAINMENT_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-metacritic-com"
       }
     ]
   },
@@ -157,7 +157,7 @@ export const ENTERTAINMENT_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-fandom-com"
       }
     ]
   },
@@ -187,7 +187,7 @@ export const ENTERTAINMENT_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-goodreads-com"
       }
     ]
   },
@@ -217,7 +217,7 @@ export const ENTERTAINMENT_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-apps-apple-com"
       }
     ]
   },

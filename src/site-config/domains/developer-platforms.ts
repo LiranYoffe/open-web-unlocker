@@ -15,7 +15,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-aws-amazon-com"
       }
     ]
   },
@@ -32,7 +32,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-devsite-cloud-google-com"
       }
     ]
   },
@@ -49,7 +49,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-learn-microsoft-com"
       }
     ]
   },
@@ -66,7 +66,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mkdocs-docs-docker-com"
       }
     ]
   },
@@ -83,7 +83,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mkdocs-kubernetes-io"
       }
     ]
   },
@@ -100,7 +100,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mkdocs-developer-hashicorp-com"
       }
     ]
   },
@@ -117,7 +117,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-github-com"
       }
     ]
   },
@@ -134,7 +134,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-gitlab-com"
       }
     ]
   },
@@ -151,7 +151,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-netlify-com"
       }
     ]
   },
@@ -168,7 +168,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-vercel-com"
       }
     ]
   },
@@ -185,7 +185,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-developers-cloudflare-com"
       }
     ]
   },
@@ -202,7 +202,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-render-com"
       }
     ]
   },
@@ -219,7 +219,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-fly-io"
       }
     ]
   },
@@ -236,7 +236,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-postgresql-org"
       }
     ]
   },
@@ -253,7 +253,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-dev-mysql-com"
       }
     ]
   },
@@ -270,7 +270,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-mongodb-com"
       }
     ]
   },
@@ -287,7 +287,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-redis-io"
       }
     ]
   },
@@ -304,7 +304,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-sqlite-org"
       }
     ]
   },
@@ -321,7 +321,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-clickhouse-com"
       }
     ]
   },
@@ -338,7 +338,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-www-elastic-co"
       }
     ]
   },
@@ -355,7 +355,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-supabase-com"
       }
     ]
   },
@@ -372,7 +372,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-stripe-com"
       }
     ]
   },
@@ -389,7 +389,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-auth0-com"
       }
     ]
   },
@@ -406,7 +406,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-clerk-com"
       }
     ]
   },
@@ -423,7 +423,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-resend-com"
       }
     ]
   },
@@ -440,7 +440,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-docusaurus-docs-sentry-io"
       }
     ]
   },
@@ -457,7 +457,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-posthog-com"
       }
     ]
   },
@@ -474,7 +474,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-devsite-firebase-google-com"
       }
     ]
   },
@@ -491,7 +491,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-developer-atlassian-com"
       }
     ]
   },
@@ -508,7 +508,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-oracle-com"
       }
     ]
   },
@@ -525,7 +525,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-mkdocs-grafana-com"
       }
     ]
   },
@@ -542,7 +542,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-prometheus-io"
       }
     ]
   },
@@ -559,7 +559,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-nginx-org"
       }
     ]
   },
@@ -576,7 +576,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-snowflake-com"
       }
     ]
   },
@@ -593,7 +593,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-developer-salesforce-com"
       }
     ]
   },
@@ -610,7 +610,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-sqlalchemy-org"
       }
     ]
   },
@@ -627,7 +627,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-sphinx-docs-sqlalchemy-org"
       }
     ]
   },
@@ -644,7 +644,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-cassandra-apache-org"
       }
     ]
   },
@@ -661,7 +661,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-influxdata-com"
       }
     ]
   },
@@ -678,7 +678,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-docs-microsoft-com"
       }
     ]
   },
@@ -695,7 +695,7 @@ export const DEVELOPER_PLATFORMS_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-planetscale-com"
       }
     ]
   }

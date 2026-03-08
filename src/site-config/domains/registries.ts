@@ -49,7 +49,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-hackage-haskell-org"
       }
     ]
   },
@@ -92,7 +92,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-npmjs-com"
       }
     ]
   },
@@ -135,7 +135,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-pypi-org"
       }
     ]
   },
@@ -255,7 +255,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-packagist-org"
       }
     ]
   },
@@ -285,7 +285,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-nuget-org"
       }
     ]
   },
@@ -315,7 +315,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-pub-dev"
       }
     ]
   },
@@ -345,7 +345,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-cocoapods-org"
       }
     ]
   },
@@ -388,7 +388,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-jsr-io"
       }
     ]
   },
@@ -429,7 +429,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-swiftpackageindex-com"
       }
     ]
   },
@@ -459,7 +459,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-hex-pm"
       }
     ]
   },
@@ -502,7 +502,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-metacpan-org"
       }
     ]
   },
@@ -553,7 +553,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-central-sonatype-com"
       }
     ]
   },
@@ -596,7 +596,7 @@ export const REGISTRIES_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-hub-docker-com"
       }
     ]
   }

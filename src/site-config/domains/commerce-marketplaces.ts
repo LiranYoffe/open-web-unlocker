@@ -41,7 +41,7 @@ export const COMMERCE_MARKETPLACES_DOMAINS: Record<string, UnlockDomainConfig> =
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-ebay-com"
       }
     ]
   },
@@ -110,7 +110,7 @@ export const COMMERCE_MARKETPLACES_DOMAINS: Record<string, UnlockDomainConfig> =
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-walmart-com"
       }
     ]
   },
@@ -140,7 +140,7 @@ export const COMMERCE_MARKETPLACES_DOMAINS: Record<string, UnlockDomainConfig> =
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-target-com"
       }
     ]
   },
@@ -170,7 +170,7 @@ export const COMMERCE_MARKETPLACES_DOMAINS: Record<string, UnlockDomainConfig> =
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-etsy-com"
       }
     ]
   }

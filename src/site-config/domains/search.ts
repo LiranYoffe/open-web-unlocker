@@ -27,7 +27,7 @@ export const SEARCH_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-google-com"
       }
     ]
   },
@@ -56,7 +56,7 @@ export const SEARCH_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-bing-com"
       }
     ]
   },
@@ -85,9 +85,10 @@ export const SEARCH_DOMAINS: Record<string, UnlockDomainConfig> = {
           "value": "/search"
         },
         "allowed_strategies": [
+          "fetch",
           "browser"
         ],
-        "entry_strategy": "browser",
+        "entry_strategy": "fetch",
         "parser": "brave-search"
       },
       {
@@ -101,7 +102,7 @@ export const SEARCH_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-search-brave-com"
       }
     ]
   }

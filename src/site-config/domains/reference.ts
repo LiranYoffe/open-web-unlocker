@@ -41,7 +41,7 @@ export const REFERENCE_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-bbc-com"
       }
     ]
   },
@@ -84,7 +84,7 @@ export const REFERENCE_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-bbc-co-uk"
       }
     ]
   },
@@ -163,7 +163,7 @@ export const REFERENCE_DOMAINS: Record<string, UnlockDomainConfig> = {
           "fetch"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-arxiv-org"
       },
       {
         "id": "arxiv-default",
@@ -175,7 +175,7 @@ export const REFERENCE_DOMAINS: Record<string, UnlockDomainConfig> = {
           "fetch"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-arxiv-org"
       }
     ]
   },

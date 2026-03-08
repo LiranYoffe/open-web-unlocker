@@ -14,7 +14,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-pinterest-com"
       }
     ]
   },
@@ -30,7 +30,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-chatgpt-com"
       }
     ]
   },
@@ -46,7 +46,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-netflix-com"
       }
     ]
   },
@@ -62,7 +62,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-temu-com"
       }
     ]
   },
@@ -78,7 +78,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-live-com"
       }
     ]
   },
@@ -94,7 +94,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-office-com"
       }
     ]
   },
@@ -110,7 +110,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-bilibili-com"
       }
     ]
   },
@@ -126,7 +126,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-twitch-tv"
       }
     ]
   },
@@ -142,7 +142,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-canva-com"
       }
     ]
   },
@@ -158,7 +158,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-aliexpress-com"
       }
     ]
   },
@@ -174,7 +174,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-roblox-com"
       }
     ]
   },
@@ -190,7 +190,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-discord-com"
       }
     ]
   },
@@ -222,7 +222,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-paypal-com"
       }
     ]
   },
@@ -238,7 +238,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-hbomax-com"
       }
     ]
   },
@@ -254,7 +254,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-instructure-com"
       }
     ]
   },
@@ -270,7 +270,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-rutube-ru"
       }
     ]
   },
@@ -286,7 +286,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-disneyplus-com"
       }
     ]
   },
@@ -302,7 +302,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-office365-com"
       }
     ]
   },
@@ -318,7 +318,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-douyin-com"
       }
     ]
   },
@@ -334,7 +334,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-shein-com"
       }
     ]
   },
@@ -350,7 +350,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-grok-com"
       }
     ]
   },
@@ -366,7 +366,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-dzen-ru"
       }
     ]
   },
@@ -382,7 +382,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-mail-ru"
       }
     ]
   },
@@ -398,7 +398,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "browser",
-        "parser": "generic"
+        "parser": "generic-vk-com"
       }
     ]
   },
@@ -415,7 +415,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "generic"
+        "parser": "generic-microsoft-com"
       }
     ]
   },
@@ -449,7 +449,7 @@ export const GENERAL_DOMAINS: Record<string, UnlockDomainConfig> = {
           "browser"
         ],
         "entry_strategy": "fetch",
-        "parser": "docs-site"
+        "parser": "docs-site-cockroachlabs-com"
       }
     ]
   }
