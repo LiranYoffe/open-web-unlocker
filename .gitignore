@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.tgz
+.env
+.env.*
+!.env.example
+fixtures/
+scripts/fixtures/
+.claude/
+docs/parser-backlog.md
+docs/parser-coverage-issues.md
+scripts/browser-stack-matrix.ts
+scripts/camoufox-python-probe.py
+scripts/debug-headful-browser.ts
+scripts/tmp-debug-browser-attempt.mjs
+reports/
