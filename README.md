@@ -49,6 +49,14 @@ Example MCP client config:
 }
 ```
 
+## Claude Code Skill
+
+Install the skill to let Claude Code fetch and parse web pages:
+
+```bash
+bunx skills add https://github.com/LiranYoffe/open-web-unlocker --skill open-web-unlocker
+```
+
 ## HTTP Server
 
 ```bash
