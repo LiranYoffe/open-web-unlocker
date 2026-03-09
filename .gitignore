@@ -14,3 +14,6 @@ scripts/camoufox-python-probe.py
 scripts/debug-headful-browser.ts
 scripts/tmp-debug-browser-attempt.mjs
 reports/
+video/
+.agents/
+skills-lock.json
